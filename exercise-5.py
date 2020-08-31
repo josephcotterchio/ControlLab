@@ -12,3 +12,16 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+
+def fib(x):
+    while x < 2:
+        return x
+    else:
+        return fib(x-2) + fib(x-1)
+
+
+for num in range(0, 50):
+    print(f"term: {str(num)} / number: {str(fib(num))}")
+
+## Full disclsoure: this took me a long time of Google searching to solve. I don't do math very well.
